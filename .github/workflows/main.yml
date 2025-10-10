@@ -21,18 +21,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /home/app
+            cd /home/desentupidoraprincipal/app
 
             echo "→ Restaurando código"
             git checkout .
             git pull
-
-            echo "→ Instalando dependências front-end"
-            npm ci
-            npm run build
-
-            echo "→ Instalando dependências PHP"
-            COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --prefer-dist --optimize-autoloader
-
-            echo "→ Rodando migrations"
-            php artisan migrate --force

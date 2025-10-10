@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desentupidoracaruarupe.com.br/sitemap.xml
+
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+
+Allow: /*.css$
+Allow: /*.js$
