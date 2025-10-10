@@ -155,8 +155,15 @@ header nav .material-icons-round {
     top: 125px;
 }
 
+.banner h1 a {
+    display: block;
+    width: 270px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
 .banner img {
-    top: 100px;
+    top: 75px;
     width: 200px;
     position: absolute;
     left: 50%;
@@ -288,7 +295,8 @@ footer {
     }
 
     .banner h1 {
-        font-size: 1.5rem;
+        top: 100px;
+        font-size: 1.3rem;
     }
 
     .banner img {

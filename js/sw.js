@@ -1,4 +1,4 @@
-const CACHE_NAME = "desentupidora-cache-v1";
+const CACHE_NAME = "desentupidora-cache-v1.0.1";
 
 const urlsToCache = [
   "/",
