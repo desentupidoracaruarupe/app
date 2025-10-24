@@ -5,6 +5,7 @@ const urlsToCache = [
   "/index.html",
   "/css/index.css",
   "/images/logo.png",
+  "/images/desentupimento.png",
   "/images/icons/icon-192.png",
   "/images/icons/icon-512.png",
   "/images/servicos/aguas-pluviais.png",
