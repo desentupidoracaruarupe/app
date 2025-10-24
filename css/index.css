@@ -248,18 +248,19 @@ section p {
 /* === SEÇÃO DE VÍDEO === */
 .video-wrapper {
     position: relative;
-    width: 90%;
+    width: 70%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 5px 10px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(13, 117, 190, 0.25);
 }
 
-.video-wrapper iframe {
-    width: 100%;
+.video-wrapper img {
     height: 80vh;
     border: none;
+    border-radius: 0.5em;
 }
 
 /* === BOTÃO WHATSAPP === */
