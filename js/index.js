@@ -1,3 +1,19 @@
+// Substituir nome da cidade dinamicamente com base no subdomínio
+(function() {
+    var cidade = window.__cidadeAtual || 'Caruaru';
+    if (cidade !== 'Caruaru') {
+        // Substituir todos os spans com class "city-name"
+        document.querySelectorAll('.city-name').forEach(function(el) {
+            el.textContent = cidade;
+        });
+        // Substituir meta description
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute('content', metaDesc.getAttribute('content').replace(/Caruaru/g, cidade));
+        }
+    }
+})();
+
 // Rolagem suave personalizada
 document.querySelectorAll('header nav a').forEach(link => {
     link.addEventListener('click', e => {

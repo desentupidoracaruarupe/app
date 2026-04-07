@@ -2,18 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desentupidora em Caruaru 24h | Limpeza de Esgoto Rápida</title>
-    <meta name="description"
-        content="Desentupidora em Caruaru PE e região. Atendimento rápido em Cupira, Bezerros, Riacho das Almas e cidades próximas. Desentupimento de esgoto, pia, vaso sanitário, água pluvial.">
-    <meta name="keywords"
-        content="desentupidora Caruaru, desentupidora Pernambuco, Serviços de desentupimento, desentupir vaso, desentupidora de pia, desentupimento de esgoto, desentupidora de esgoto, desentupimento pia, vaso sanitário, Cupira, Bezerros, Palmares, Riacho das Almas, São Bento do Una, ">
-    <meta name="author" content="Desentupidora Principal">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <link rel="icon" href="./images/favicon.png" type="image/png">
-    <link href="./css/index.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -25,6 +13,40 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TV3VHFNZ');</script>
     <!-- End Google Tag Manager -->
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desentupidora em Caruaru 24h | Limpeza de Esgoto Rápida</title>
+    <script>
+        // Mapeamento de subdomínios para nomes de cidades
+        (function() {
+            var cidadeMap = {
+                'palmares': 'Palmares',
+                'santa-cruz-do-capibaribe': 'Santa Cruz do Capibaribe',
+                'caruaru': 'Caruaru',
+                'bezerros': 'Bezerros',
+                'gravata': 'Gravatá',
+                'garanhuns': 'Garanhuns',
+                'toritama': 'Toritama'
+            };
+            var host = window.location.hostname;
+            var subdomain = host.split('.')[0];
+            var cidade = cidadeMap[subdomain] || 'Caruaru';
+            if (cidade !== 'Caruaru') {
+                document.title = document.title.replace(/Caruaru/g, cidade);
+            }
+            window.__cidadeAtual = cidade;
+        })();
+    </script>
+    <meta name="description"
+        content="Desentupidora em Caruaru PE e região. Atendimento rápido em Cupira, Bezerros, Riacho das Almas e cidades próximas. Desentupimento de esgoto, pia, vaso sanitário, água pluvial.">
+    <meta name="keywords"
+        content="desentupidora Caruaru, desentupidora Pernambuco, Serviços de desentupimento, desentupir vaso, desentupidora de pia, desentupimento de esgoto, desentupidora de esgoto, desentupimento pia, vaso sanitário, Cupira, Bezerros, Palmares, Riacho das Almas, São Bento do Una, ">
+    <meta name="author" content="Desentupidora Principal">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link href="./css/index.css" rel="stylesheet">
 
 </head>
 
@@ -51,7 +73,7 @@
                 <a class="btn-whatsapp"
                     href="https://wa.me/5581993539501?text=Ol%C3%A1+encontrei+seu+site+na+internet%2C+pode+me+tirar+umas+d%C3%BAvidas%3F"
                     target="_blank">💬 Chamar no WhatsApp</a>
-                Desentupidora em Caruaru e Região - Atendimento 24h com Rapidez e Qualidade
+                Desentupidora em <span class="city-name">Caruaru</span> e Região - Atendimento 24h com Rapidez e Qualidade
             </h1>
         </section>
 
@@ -166,7 +188,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Desentupidora em Caruaru e Região - Todos os direitos reservados.</p>
+            <p>&copy; 2025 Desentupidora em <span class="city-name">Caruaru</span> e Região - Todos os direitos reservados.</p>
             <p>Atendimento em Caruaru, Cupira, Riacho das Almas, Bezerros, Cachoeirinha, São Bento do Una e Palmares -
                 Pernambuco.</p>
         </footer>
