@@ -33,3 +33,35 @@ if ('serviceWorker' in navigator) {
             .catch(err => console.log('Falha ao registrar SW:', err));
     });
 }
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const navMenu = document.getElementById('navMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const navLinks = document.querySelectorAll('#navMenu a');
+
+    function openMenu() {
+        navMenu.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Evita rolagem no fundo
+    }
+
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (menuToggle && menuClose && navMenu && menuOverlay) {
+        menuToggle.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Fecha o menu ao clicar em um link
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    }
+});
