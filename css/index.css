@@ -299,7 +299,7 @@ header nav .material-icons-round {
 }
 
 /* === BUTTONS === */
-.whatsapp {
+.btn-whatsapp {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -314,13 +314,13 @@ header nav .material-icons-round {
     transition: all 0.3s ease;
 }
 
-.whatsapp:hover {
+.btn-whatsapp:hover {
     background: var(--whatsapp-dark);
     transform: translateY(-3px);
     box-shadow: 0 12px 25px rgba(37, 211, 102, 0.5);
 }
 
-.whatsapp.large {
+.btn-whatsapp.large {
     font-size: 1.2rem;
     padding: 18px 40px;
 }
@@ -359,6 +359,15 @@ header nav .material-icons-round {
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
+}
+
+.btn-whatsapp svg,
+.btn-whatsapp path,
+.btn-whatsapp span,
+.floating-whatsapp svg,
+.floating-whatsapp path,
+.floating-whatsapp span {
+    pointer-events: none;
 }
 
 /* === SECTIONS GENERAL === */
@@ -941,7 +950,7 @@ section h2 {
         font-size: 2rem;
     }
 
-    .whatsapp {
+    .btn-whatsapp {
         padding: 14px 24px;
         font-size: 1rem;
     }
